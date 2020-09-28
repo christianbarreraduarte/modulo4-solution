@@ -1,0 +1,6 @@
+<ul>
+      <li ng-repeat="unmenu in $ctrl.items.data"
+          ui-sref="categories.items({itemId: $index})">
+        {{ unmenu.name }} , {{ unmenu.short_name }} , {{$index}}
+      </li>
+</ul>

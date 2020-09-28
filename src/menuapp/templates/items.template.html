@@ -1,0 +1,9 @@
+<div class="estilo3">Categorie name: {{ itemDetail.name }}</div>
+<div class="estilo3">Categorie short name: {{ itemDetail.short_name }}</div>
+<div class="estilo3">Menú list for this Categorie:</div>
+
+<ul class="estilo3">
+  <li ng-repeat="elemento in itemDetail.elementos">
+    {{ elemento.short_name }}: {{ elemento.name }}
+  </li>
+</ul>
